@@ -246,7 +246,8 @@ class ET_Client(object):
         if self.soap_endpoint is None or not self.soap_endpoint:
             self.soap_endpoint = self.get_soap_endpoint()
 
-        self.soap_client = suds.client.Client(self.wsdl_file_url, faults=False, cachingpolicy=1)
+        proxy_settings = dict(http=os.environ["HTTP_PROXY"], https=os.environ["HTTPS_PROXY"])
+        self.soap_client = suds.client.Client(self.wsdl_file_url, faults=False, cachingpolicy=1, proxy=proxy_settings)
         self.soap_client.set_options(location=self.soap_endpoint)
         self.soap_client.set_options(headers={'user-agent' : 'FuelSDK-Python-v1.3.0'})
 
