@@ -4,7 +4,7 @@
 
     <schema elementFormDefault="qualified" targetNamespace="http://exacttarget.com/wsdl/partnerAPI" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
 
-      <import id="APIFault" schemaLocation="https://webservice.exacttarget.com/ETFrameworkFault.xsd" namespace="urn:fault.partner.exacttarget.com" />
+      <import id="APIFault" schemaLocation="https://raw.githubusercontent.com/mytestorg112/FuelSDK-Python/master/FuelSDK/ETFrameworkFault.xsd" namespace="urn:fault.partner.exacttarget.com" />
 
       <simpleType name="instanceid">
 
