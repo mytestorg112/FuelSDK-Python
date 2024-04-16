@@ -9142,7 +9142,7 @@
 
     <port binding="tns:SoapBinding" name="Soap">
 
-      <soap:address location="https://webservice.exacttarget.com/Service.asmx" />
+      <soap:address location="https://mc-00tq6cdjppzlxr9vvx98rqyy1.soap.marketingcloudapis.com/Service.asmx" />
 
     </port>
 
